@@ -6,9 +6,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 
-namespace BlafetisLib
+namespace BlafettisLib
 {
-    public partial class Blafetis 
+    public partial class Blafettis 
     {
         [Parameter] public double angle {get; set;}  = 90;
         [Parameter] public double spread {get; set;}  = 45;
@@ -16,7 +16,7 @@ namespace BlafetisLib
         [Parameter] public int elementCount {get; set;}  = 50;
         [Parameter] public string width {get; set;} = "10px";
         [Parameter] public string height {get; set;} = "10px";
-        [Parameter] public string[] colors {get; set;} = BlafetisLibHelper.defaultColors;
+        [Parameter] public string[] colors {get; set;} = BlafettisLibHelper.defaultColors;
         [Parameter] public long duration {get; set;} =  3000;
         [Parameter] public double stagger {get; set;} =  0;
         [Parameter] public double dragFriction {get; set;} =  0.1;
@@ -43,7 +43,7 @@ namespace BlafetisLib
         private bool inExecution = false;
         private object olo = new object();
 
-        public async void RaiseConfeti()
+        public async void RaiseConfetti()
         {   
             lock(olo)
             {
@@ -52,7 +52,7 @@ namespace BlafetisLib
             }
 
             // make fettis     
-            var elements = BlafetisLibHelper.createElements(elementCount,colors, width, height);
+            var elements = BlafettisLibHelper.createElements(elementCount,colors, width, height);
             var newFesttis = 
                 elements
                 .Select(e=> new Fetti(
@@ -97,7 +97,7 @@ namespace BlafetisLib
             fettis
                 .Take(elementCount)
                 .ToList()
-                .ForEach(fetti => BlafetisLibHelper.updateFetti(fetti, progress, dragFriction));            
+                .ForEach(fetti => BlafettisLibHelper.updateFetti(fetti, progress, dragFriction));            
         }
     }
 }

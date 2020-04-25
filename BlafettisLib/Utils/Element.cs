@@ -1,6 +1,6 @@
 using System;
 
-namespace BlafetisLib
+namespace BlafettisLib
 {
     public class Element 
     {

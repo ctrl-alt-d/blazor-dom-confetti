@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace BlafetisLib
+namespace BlafettisLib
 {
 
     public class Physics

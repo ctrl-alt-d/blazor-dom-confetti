@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlafetisLib\BlafetisLib.csproj" />
+    <ProjectReference Include="..\BlafettisLib\BlafettisLib.csproj" />
   </ItemGroup>
 
 </Project>

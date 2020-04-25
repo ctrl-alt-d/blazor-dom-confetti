@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\BlafetisLib\BlafetisLib.csproj" />
+    <ProjectReference Include="..\BlafettisLib\BlafettisLib.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

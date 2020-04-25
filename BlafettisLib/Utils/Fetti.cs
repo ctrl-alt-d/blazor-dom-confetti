@@ -1,4 +1,4 @@
-namespace BlafetisLib
+namespace BlafettisLib
 {
     public class Fetti
     {
