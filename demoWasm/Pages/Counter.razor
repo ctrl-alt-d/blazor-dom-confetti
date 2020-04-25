@@ -1,0 +1,22 @@
+﻿@page "/counter"
+
+<div class="jumbotron">
+    <h1>Counter</h1>
+    <h2>Current count: @currentCount</h2>
+    <div style="margin-top:250px;">    </div>
+    <button class="btn btn-primary" @onclick="IncrementCount">
+        Click me
+        <Blafetis @ref="blafetis"></Blafetis>
+    </button>
+</div>
+
+@code {
+    private int currentCount = 0;
+    protected Blafetis blafetis;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+        blafetis.RaiseConfeti();
+    }
+}
