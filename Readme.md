@@ -2,7 +2,10 @@
 
 ### Blafetti = Blazor + Confetti
 
-This is a Blazor Library you can use to add confetti to your buttons or elements. 100% JS free. Try DemoWasm, server side is not enough fast refreshing confetti.
+This is a Blazor component you can use to add confetti to your buttons or elements. 100% JS free. Try DemoWasm, server side is not enough fast refreshing confetti.
+
+This component is a clone of [dom-confetti](https://github.com/daniel-lundin/dom-confetti) but without javascript, just Blazor.
+
 
 ![ScreenShot](./ScreenShot/i.gif)
 
