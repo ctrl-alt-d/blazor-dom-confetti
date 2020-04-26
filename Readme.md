@@ -48,6 +48,10 @@ This is tow Blazor component you can use to add confetti to your buttons or elem
 * `blazor-dom-confetti`:
   * Send options to dom-confetti.
 
+### Know issues
+
+* dom-confetti uses [requestAnimationFrame](https://developer.mozilla.org/es/docs/Web/API/Window/requestAnimationFrame) that is not available on Blazor. The Blazor version just has a main loop using 100% cpu redrawing confettis.
+
 ### About
 
 * License MIT, copyright Dani Herrera. Physics of this code is a direct translation of Daniel Lundin's DOM-Confetti code.
