@@ -9,6 +9,7 @@ using Microsoft.JSInterop;
 
 namespace BlafettisLib
 {
+
     public partial class Blafettis 
     {
         [Parameter] public double angle {get; set;}  = 90;
@@ -29,7 +30,8 @@ namespace BlafettisLib
 
         public async void RaiseConfetti()
         {   
-            await JSRuntime.InvokeVoidAsync("blafettis_raise_confetti", MyRef);
+            var config = new ConfettiConfig(angle,spread,startVelocity,elementCount,width,height,colors,duration,stagger,dragFriction);
+            await JSRuntime.InvokeVoidAsync("blafettis_raise_confetti", MyRef,config);
         }
         
     }

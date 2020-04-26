@@ -1,10 +1,9 @@
 import { confetti } from 'dom-confetti';
 
-function blafettis_raise_confetti(ref)
+function blafettis_raise_confetti(ref, config)
 {
-    confetti(ref);
+    confetti(ref, config);
 }
 
-function pepe() {alert("hola");}
 
 window.blafettis_raise_confetti = blafettis_raise_confetti;

@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">
+    Code:
+  </div>
+  <div class="card-body">
+    <pre><code>@(@"
+    <button class=""btn btn-primary"" @onclick=""IncrementCount"">
+        Click me
+        <Blafettis @ref=""blafettis"" />
+    </button>
+
+    @@code {
+        private int currentCount = 0;
+        protected Blafettis blafettis;
+
+        private void IncrementCount()
+        {
+            currentCount++;
+            blafettis.RaiseConfetti();
+        }
+    }")
+    </code>
+    </pre>
+  </div>
+</div>

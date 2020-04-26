@@ -1,0 +1,101 @@
+﻿@page "/options"
+@using BlafettisLib
+
+<h1>Sample Options</h1>
+    <form>
+
+    <div class="form-group">
+        <label for="angle">Value for angle: @angle</label>
+        <input type="range" class="custom-range"  id="angle" @bind="@angle" step="1" min="0" max="360"/>
+    </div>
+
+    <div class="form-group">
+        <label for="spread">Value for spread: @spread</label>
+        <input type="range" class="custom-range"  id="spread" @bind="@spread" step="1" min="0" max="360"/>
+    </div>
+
+    <div class="form-group">
+        <label for="startVelocity">Value for startVelocity: @startVelocity</label>
+        <input type="range" class="custom-range"  id="startVelocity" @bind="@startVelocity" step="1" min="0" max="100"/>
+    </div>
+
+    <div class="form-group">
+        <label for="elementCount">Value for elementCount: @elementCount</label>
+        <input type="range" class="custom-range"  id="elementCount" @bind="@elementCount" step="1" min="0" max="200"/>
+    </div>
+
+    <div class="form-group">
+        <label for="width">Value for width: @widthCss</label>
+        <input type="range" class="custom-range"  id="width" @bind="@width" step="1" min="0" max="100"/>
+    </div>
+
+    <div class="form-group">
+        <label for="height">Value for height: @heightCss</label>
+        <input type="range" class="custom-range"  id="height" @bind="@height" step="1" min="0" max="100"/>
+    </div>
+
+    <div class="form-group">
+        <label for="duration">Value for duration: @duration</label>
+        <input type="range" class="custom-range"  id="duration" @bind="@duration" step="1" min="100" max="10000"/>
+    </div>
+
+    <div class="form-group">
+        <label for="stagger">Value for stagger: @stagger</label>
+        <input type="range" class="custom-range"  id="stagger" @bind="@stagger" step="1" min="0" max="50"/>
+    </div>
+
+    <div class="form-group">
+        <label for="dragFriction">Value for dragFriction: @dragFrictionCooked</label>
+        <input type="range" class="custom-range"  id="dragFriction" @bind="@dragFriction" step="2" min="1" max="100"/>
+    </div>
+
+    <div class="text-center" style="margin-bottom: 30px;margin-top: 30px;">
+        <button type="button" class="btn btn-lg btn-primary" @onclick="IncrementCount">
+            Click me
+            <Blafettis @ref="blafettis" 
+                        angle="@angle"
+                        spread="@spread"
+                        startVelocity="@startVelocity"
+                        elementCount="@elementCount"
+                        width="@widthCss"
+                        height="@heightCss"
+                        colors="@colors"
+                        duration="@duration"
+                        stagger="@stagger"
+                        dragFriction="@dragFrictionCooked"        
+            />
+        </button>
+    </div>
+
+</form>
+
+<OptionsDemoCode/>
+
+@code {
+    private int currentCount = 0;
+    protected Blafettis blafettis;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+        blafettis.RaiseConfetti();
+    }
+
+
+
+    /**/
+    private double angle { get; set; } = 90;
+    private double spread { get; set; } = 45;
+    private double startVelocity { get; set; } = 45;
+    private int elementCount { get; set; } = 50;
+    private int width { get; set; } = 10;
+    private int height { get; set; } = 10;
+    private string widthCss => $"{width}px";
+    private string heightCss => $"{height}px";
+    private string[] colors { get; set; } = BlafettisLibHelper.defaultColors;
+    private long duration { get; set; } = 3000;
+    private double stagger { get; set; } = 0;
+    private double dragFriction { get; set; } = 10;
+    private double dragFrictionCooked => dragFriction/100;
+
+}
