@@ -3,15 +3,28 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
 
+    <PackageId>blazor-dom-confetti</PackageId>
+    <Version>0.0.0</Version>
+    <Authors>Dani Herrera</Authors>
+    <Company>ctrl.alt.d</Company>
+    <PackageLicenseFile>MIT</PackageLicenseFile>
+    <Description>A Blazor Wrapper for dom-confetti.</Description>
+    <PackageProjectUrl>https://github.com/ctrl-alt-d/blazor-dom-confetti</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ctrl-alt-d/blazor-dom-confetti.git</RepositoryUrl>
+    <PackageTags>Blazor,Component,Wrapper,Confetti</PackageTags>
+    <PackageReleaseNotes>
+      0.0.0 blazor-dom-confetti
+    </PackageReleaseNotes>
+    
   </PropertyGroup>
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.0-preview.2.20167.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.0-preview.2.20167.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.3" />
   </ItemGroup>
 
 </Project>
