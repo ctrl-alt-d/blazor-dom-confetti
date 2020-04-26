@@ -8,7 +8,7 @@
 
 ## Show me the code
 
-Install via nuget [blazor-dom-confetti](https://www.nuget.org/packages/blazor-dom-confetti/)
+* Install [blazor-dom-confetti via nuget](https://www.nuget.org/packages/blazor-dom-confetti/)
 
 ```razor
 @page "/counter"
