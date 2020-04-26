@@ -1,18 +1,17 @@
 # Blafetti
 
-### Blafetti = Blazor + Confetti
+## Blafetti = Blazor + Confetti
 
 Blazor component you can use to add confetti to your buttons or elements. Two flavors:
 
 * `blazor-blazor-confetti`: A 100% JS free native blazor component. This component is a clone of [dom-confetti](https://github.com/daniel-lundin/dom-confetti) but without javascript, just Blazor. Not ready for production.
 * `blazor-dom-confetti`: A blazor wraper component for [dom-confetti](https://github.com/daniel-lundin/dom-confetti).
 
-
-### Devs love screenshots
+## Devs love screenshots
 
 ![ScreenShot](./ScreenShot/i.gif)
 
-### Show me the code
+## Show me the code
 
 ```razor
 @page "/counter"
@@ -40,20 +39,20 @@ For `blazor-dom-confetti` remember to add javascript `<script src="_content/blaz
 * Server side on `_Host.cshtml`
 * Wasm on `wwwroot/index.html`
 
-### Contributions
+## Contributions
 
 * Be free to PR any feature or bugfix.
 * Be free to post any issue.
 
-### ToDo
+## ToDo
 
 * `blazor-blazor-confetti`:
   * Add cancelation token to stop confetti async function on dispose.
 
-### Blazor Version Know issues
+## Blazor Version Know issues
 
 * dom-confetti uses [requestAnimationFrame](https://developer.mozilla.org/es/docs/Web/API/Window/requestAnimationFrame) that is not available on Blazor. The Blazor version just has a main loop using 100% cpu redrawing confettis.
 
-### About
+## About
 
 * License MIT, copyright Dani Herrera. Physics and CSS styles of blazor-blazor-confetti code is a direct translation of Daniel Lundin's DOM-Confetti code. The component blazor-dom-confetti is a wrapper for Daniel Lundin's dom-confetti project. The code of dom-confetti is included on `bundle.js` for devs convinience. [dom-confetti](https://github.com/daniel-lundin/dom-confetti)

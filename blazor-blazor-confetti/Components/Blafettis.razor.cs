@@ -34,7 +34,9 @@ namespace BlafettisLib
         }
         Random r = new Random();
         Func<double> _random ;
-
+        [Parameter] public string style {get; set;} = "display:inline-block;heigt:0;width:0;margin-left: auto;margin-right: auto";
+        [Parameter] public Dictionary<string, object> InputAttributes { get; set; } = new Dictionary<string, object>();
+            
         private List<Fetti> fettis = new List<Fetti>();
 
         private Stopwatch stopWatch = new Stopwatch();

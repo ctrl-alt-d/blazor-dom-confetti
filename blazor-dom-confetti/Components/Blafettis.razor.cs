@@ -1,9 +1,6 @@
 // https://github.com/daniel-lundin/dom-confetti/blob/master/src/main.js
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
@@ -22,16 +19,17 @@ namespace BlafettisLib
         [Parameter] public long duration {get; set;} =  3000;
         [Parameter] public double stagger {get; set;} =  0;
         [Parameter] public double dragFriction {get; set;} =  0.1;
-        [Parameter] public Func<double> random {get; set;} = null;
+        [Parameter] public Func<double>? random {get; set;} = null;
+        [Parameter] public Dictionary<string, object> InputAttributes { get; set; } = new Dictionary<string, object>();
+        [Parameter] public string style {get; set;} = "display:inline-block;heigt:0;width:0;margin-left: auto;margin-right: auto";
+        [Inject] private IJSRuntime? JSRuntime {set;get;}
 
-        [Inject] private IJSRuntime JSRuntime {set;get;}
-
-        ElementReference MyRef;
+        ElementReference? MyRef = null;
 
         public async void RaiseConfetti()
         {   
             var config = new ConfettiConfig(angle,spread,startVelocity,elementCount,width,height,colors,duration,stagger,dragFriction);
-            await JSRuntime.InvokeVoidAsync("blafettis_raise_confetti", MyRef,config);
+            await JSRuntime!.InvokeVoidAsync("blafettis_raise_confetti", MyRef!,config);
         }
         
     }

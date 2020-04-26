@@ -1,6 +1,5 @@
 ﻿@namespace BlafettisLib
-
-<div style="display:inline-block;heigt:0;width:0;margin-left: auto;margin-right: auto;">    
+<div style="display:inline-block;heigt:0;width:0;margin-left: auto;margin-right: auto;" @attributes="InputAttributes">    
     @foreach (var f in this.fettis)
     {
         <div style="@f.element.style" @key="@f.element.key" />
