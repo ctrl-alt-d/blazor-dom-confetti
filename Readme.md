@@ -4,9 +4,11 @@
 
 ## Devs love screenshots
 
-![ScreenShot](./ScreenShot/i.gif)
+![ScreenShot](./DemosAndMore/ScreenShot/i.gif)
 
 ## Show me the code
+
+Install via nuget [blazor-dom-confetti](https://www.nuget.org/packages/blazor-dom-confetti/)
 
 ```razor
 @page "/counter"
@@ -19,12 +21,12 @@
 
 @code {
     private int currentCount = 0;
-    protected Blafettis blafettis;
+    protected Blafettis blafettis;  // get the reference
 
     private void IncrementCount()
     {
         currentCount++;
-        blafettis.RaiseConfetti();
+        blafettis.RaiseConfetti();  // raise confetti via method
     }
 }
 ```
@@ -33,6 +35,10 @@ For `blazor-dom-confetti` remember to add javascript `<script src="_content/blaz
 
 * Server side on `_Host.cshtml`
 * Wasm on `wwwroot/index.html`
+
+Also remember to include it: `using BlafettisLib;` or `@using BlafettisLib`
+
+Just insert `<Blafettis @ref="blafettis" />` component where you want to raise confettis, and call `blafettis.RaiseConfetti();` method.
 
 ## What about a native blazor version
 
