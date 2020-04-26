@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Demo.Data;
 
-namespace Demo
+namespace DemoServerSide
 {
     public class Startup
     {

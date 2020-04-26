@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\BlafettisLib\BlafettisLib.csproj" />
+    <ProjectReference Include="..\blazor-dom-confetti\blazor-dom-confetti.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

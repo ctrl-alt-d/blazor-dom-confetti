@@ -2,9 +2,11 @@
 
 ### Blafetti = Blazor + Confetti
 
-This is a Blazor component you can use to add confetti to your buttons or elements. 100% JS free. Try DemoWasm, server side is not enough fast refreshing confetti.
+This is tow Blazor component you can use to add confetti to your buttons or elements. 
 
-This component is a clone of [dom-confetti](https://github.com/daniel-lundin/dom-confetti) but without javascript, just Blazor.
+* `blazor-blazor-confetti`: A 100% JS free native blazor component. This component is a clone of [dom-confetti](https://github.com/daniel-lundin/dom-confetti) but without javascript, just Blazor.
+* `blazor-dom-confetti`: A blazor wraper component for [dom-confetti](https://github.com/daniel-lundin/dom-confetti).
+
 
 ### Devs love screenshots
 
@@ -40,11 +42,11 @@ This component is a clone of [dom-confetti](https://github.com/daniel-lundin/dom
 
 ### ToDo
 
-* Add cancelation token to stop confetti async function on dispose.
+* `blazor-blazor-confetti`:
+  * Add cancelation token to stop confetti async function on dispose.
 
-### Know issues
-
-* On Server Side the effect is not good, not enought framerate from server, maybe.
+* `blazor-dom-confetti`:
+  * Send options to dom-confetti.
 
 ### About
 

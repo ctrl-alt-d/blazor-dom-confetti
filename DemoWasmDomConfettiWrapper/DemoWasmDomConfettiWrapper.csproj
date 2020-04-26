@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlafettisLib\BlafettisLib.csproj" />
+    <ProjectReference Include="..\blazor-dom-confetti\blazor-dom-confetti.csproj" />
   </ItemGroup>
 
 </Project>
