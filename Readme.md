@@ -36,7 +36,7 @@ For `blazor-dom-confetti` remember to add javascript `<script src="_content/blaz
 
 ## What about a native blazor version
 
-* [./DemosAndMore/dom.confetti-blazor-native-component/blazor-blazor-confetti](./DemosAndMore/dom.confetti-blazor-native-component/blazor-blazor-confetti) is a 100% JS free native blazor component. This component is a clone of [dom-confetti](https://github.com/daniel-lundin/dom-confetti) but without javascript, just Blazor. Not ready for production.
+A blazor native version, without javascript, wrote 100% on c# and html is available at [./DemosAndMore/dom.confetti-blazor-native-component/blazor-blazor-confetti](./DemosAndMore/dom.confetti-blazor-native-component/blazor-blazor-confetti). It is a 100% JS free native blazor component. This component is a clone of [dom-confetti](https://github.com/daniel-lundin/dom-confetti) but without javascript, just Blazor. Not ready for production.
 
 ## This repo
 
