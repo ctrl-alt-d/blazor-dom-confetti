@@ -8,7 +8,7 @@
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>blazor-dom-confetti</PackageId>
-    <Version>0.0.0.1</Version>
+    <Version>0.0.0.2</Version>
     <Authors>Dani Herrera, (Wrapping Daniel Lundin code)</Authors>
     <Company>ctrl.alt.d</Company>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
@@ -17,6 +17,7 @@
     <RepositoryUrl>https://github.com/ctrl-alt-d/blazor-dom-confetti.git</RepositoryUrl>
     <PackageTags>Blazor,Component,Wrapper,Confetti</PackageTags>
     <PackageReleaseNotes>
+      0.0.0.2 updated dependencies.
       0.0.0.1 blazor-dom-confetti is a Blazor wrapper of Daniel Lundin dom-confetti node project
     </PackageReleaseNotes>
     
