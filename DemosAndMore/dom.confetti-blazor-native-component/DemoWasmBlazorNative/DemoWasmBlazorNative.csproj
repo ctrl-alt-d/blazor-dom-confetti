@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\blazor-dom-confetti\blazor-dom-confetti.csproj" />
+    <ProjectReference Include="..\blazor-blazor-confetti\blazor-blazor-confetti.csproj" />
   </ItemGroup>
   
 </Project>

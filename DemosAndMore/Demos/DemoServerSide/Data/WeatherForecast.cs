@@ -1,6 +1,6 @@
 using System;
 
-namespace Demo.Data
+namespace DemoServerSide.Data
 {
     public class WeatherForecast
     {
