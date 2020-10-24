@@ -52,6 +52,7 @@ Information for this repo
 
 * Be free to PR any feature or bugfix.
 * Be free to post any issue.
+* Be free to make a contribution for [hacktoberfest](https://hacktoberfest.digitalocean.com) :)
 
 ### ToDo
 
