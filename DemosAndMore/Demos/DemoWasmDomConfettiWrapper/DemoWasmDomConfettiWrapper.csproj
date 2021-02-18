@@ -7,11 +7,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.3" PrivateAssets="all" />
-    <PackageReference Include="System.Net.Http.Json" Version="5.0.3" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
   </ItemGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\blazor-dom-confetti\blazor-dom-confetti.csproj" />
   </ItemGroup>
-  
+
 </Project>
