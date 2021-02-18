@@ -1,7 +1,23 @@
 @page "/"
 
-<h1>Hello, world!</h1>
+@using BlafettisLib
 
-Welcome to your new app.
+<div style="position: fixed; text-align: center;width:100%;bottom: 100px;">
+    <button 
+        class="btn btn-primary" 
+        @onclick="IncrementCount">
+        Pacakge Manager Party
+        <Blafettis @ref="blafettis" />
+    </button>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code {
+    private int currentCount = 0;
+    protected Blafettis blafettis;  // get the reference
+
+    private void IncrementCount()
+    {
+        currentCount++;
+        blafettis.RaiseConfetti();  // raise confetti via method
+    }
+}
