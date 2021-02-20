@@ -9,9 +9,9 @@ Can I see a live demo? Yes, at https://blazorrepl.com/repl/wluQmuPX38bvbL8n28
 ## QuickStart
 
 Install [blazor-dom-confetti via nuget](https://www.nuget.org/packages/blazor-dom-confetti/) with your favorite method:
-   * .net cli: `dotnet add package blazor-dom-confetti --version 0.0.0.3`
-   * Package reference: `<PackageReference Include="blazor-dom-confetti" Version="0.0.0.3" />`
-   * Package manager: `Install-Package blazor-dom-confetti -Version 0.0.0.3`
+   * .net cli: `dotnet add package blazor-dom-confetti --version 0.0.0.4`
+   * Package reference: `<PackageReference Include="blazor-dom-confetti" Version="0.0.0.4" />`
+   * Package manager: `Install-Package blazor-dom-confetti -Version 0.0.0.4`
 
 Use component where you want, just insert `<Blafettis @ref="blafettis" />` component where you want to raise confettis, and call `blafettis.RaiseConfetti();` method (remember to include namespace `using BlafettisLib;` or `@using BlafettisLib`):
 
