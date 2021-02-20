@@ -1,9 +1,6 @@
-import { confetti } from 'dom-confetti';
+import { confetti as domConfetti} from 'dom-confetti';
 
-function blafettis_raise_confetti(ref, config)
+export function confetti(ref, config)
 {
-    confetti(ref, config);
+    domConfetti(ref, config);
 }
-
-
-window.blafettis_raise_confetti = blafettis_raise_confetti;

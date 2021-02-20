@@ -9,13 +9,9 @@ Can I see a live demo? Yes, at https://blazorrepl.com/repl/wluQmuPX38bvbL8n28
 ## QuickStart
 
 Install [blazor-dom-confetti via nuget](https://www.nuget.org/packages/blazor-dom-confetti/) with your favorite method:
-   * .net cli: `dotnet add package blazor-dom-confetti --version 0.0.0.3`
-   * Package reference: `<PackageReference Include="blazor-dom-confetti" Version="0.0.0.3" />`
-   * Package manager: `Install-Package blazor-dom-confetti -Version 0.0.0.3`
-
-Add javascript `<script src="_content/blazor-dom-confetti/bundle.js"></script>`:
-* Server side on `_Host.cshtml`
-* Wasm on `wwwroot/index.html`
+   * .net cli: `dotnet add package blazor-dom-confetti --version 0.0.0.4`
+   * Package reference: `<PackageReference Include="blazor-dom-confetti" Version="0.0.0.4" />`
+   * Package manager: `Install-Package blazor-dom-confetti -Version 0.0.0.4`
 
 Use component where you want, just insert `<Blafettis @ref="blafettis" />` component where you want to raise confettis, and call `blafettis.RaiseConfetti();` method (remember to include namespace `using BlafettisLib;` or `@using BlafettisLib`):
 
@@ -41,6 +37,8 @@ Use component where you want, just insert `<Blafettis @ref="blafettis" />` compo
 ```
 
 Personalize your confetti with options (colors, angle, velocity, ...) see demo for a sample https://github.com/ctrl-alt-d/blazor-dom-confetti/blob/main/DemosAndMore/Demos/DemoServerSide/Pages/Options.razor
+
+_From version `0.0.0.4` no js includes are needed.
 
 ### Contributions
 
