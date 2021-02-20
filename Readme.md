@@ -13,7 +13,11 @@ Install [blazor-dom-confetti via nuget](https://www.nuget.org/packages/blazor-do
    * Package reference: `<PackageReference Include="blazor-dom-confetti" Version="0.0.0.3" />`
    * Package manager: `Install-Package blazor-dom-confetti -Version 0.0.0.3`
 
-Use component where you want:
+Add javascript `<script src="_content/blazor-dom-confetti/bundle.js"></script>`:
+* Server side on `_Host.cshtml`
+* Wasm on `wwwroot/index.html`
+
+Use component where you want, just insert `<Blafettis @ref="blafettis" />` component where you want to raise confettis, and call `blafettis.RaiseConfetti();` method (remember to include namespace `using BlafettisLib;` or `@using BlafettisLib`):
 
 ```razor
 @page "/counter"
@@ -35,14 +39,6 @@ Use component where you want:
     }
 }
 ```
-
-Add javascript `<script src="_content/blazor-dom-confetti/bundle.js"></script>`:
-* Server side on `_Host.cshtml`
-* Wasm on `wwwroot/index.html`
-
-Remember to include namespace: `using BlafettisLib;` or `@using BlafettisLib`
-
-Just insert `<Blafettis @ref="blafettis" />` component where you want to raise confettis, and call `blafettis.RaiseConfetti();` method.
 
 Personalize your confetti with options (colors, angle, velocity, ...) see demo for a sample https://github.com/ctrl-alt-d/blazor-dom-confetti/blob/main/DemosAndMore/Demos/DemoServerSide/Pages/Options.razor
 
