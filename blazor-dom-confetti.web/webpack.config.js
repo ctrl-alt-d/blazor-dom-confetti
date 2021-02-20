@@ -7,6 +7,8 @@ module.exports = {
     output: {
       path: path.resolve(__dirname, '../blazor-dom-confetti/wwwroot'),
       filename: 'bundle.js',
+      libraryTarget: 'window',
+      library: 'blazor_dom_confetti'
     },
 
   };

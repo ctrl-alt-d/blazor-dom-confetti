@@ -1,6 +1,7 @@
 // https://github.com/daniel-lundin/dom-confetti/blob/master/src/main.js
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
@@ -29,8 +30,16 @@ namespace BlafettisLib
         public async void RaiseConfetti()
         {   
             var config = new ConfettiConfig(angle,spread,startVelocity,elementCount,width,height,colors,duration,stagger,dragFriction);
-            await JSRuntime!.InvokeVoidAsync("blafettis_raise_confetti", MyRef!,config);
+            await JSRuntime!.InvokeVoidAsync("blazor_dom_confetti.confetti", MyRef!,config);
         }
+
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                await JSRuntime!.InvokeAsync<IJSObjectReference>("import", "/_content/blazor-dom-confetti/bundle.js");
+            }
+        } 
         
     }
 }
