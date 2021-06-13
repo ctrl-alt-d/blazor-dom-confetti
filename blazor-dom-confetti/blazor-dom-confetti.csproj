@@ -7,7 +7,7 @@
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>blazor-dom-confetti</PackageId>
-    <Version>0.0.0.4</Version>
+    <Version>0.0.0.5</Version>
     <Authors>Dani Herrera, (Wrapping Daniel Lundin code)</Authors>
     <Company>ctrl.alt.d</Company>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
@@ -17,6 +17,7 @@
     <PackageTags>Blazor,Component,Wrapper,Confetti</PackageTags>
     <PackageReleaseNotes>
 
+* 0.0.0.5 update dependencies.
 * 0.0.0.4 js auto-import. No js tags ib index or host.
 * 0.0.0.3 updated webpack and blazor to 5.
 * 0.0.0.2 updated dependencies.
